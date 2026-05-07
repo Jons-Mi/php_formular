@@ -37,7 +37,10 @@
     <br>
     <?php 
         if (isset($_GET["obed"] )) {
-            echo "<h1>to je super, taky se těším na " . $_GET["obed"] . "</h1>";
+            if ($_GET["obed"] == ""){
+                echo "<h1>Já mám k obědu psí konzervu</h1>";}
+            else {
+                echo "<h1>to je super, taky se těším na " . $_GET["obed"] . "</h1>";}
         }
         else{
             echo "<h1>šel bych na oběd</h1>";
